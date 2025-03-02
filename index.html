@@ -76,9 +76,23 @@
     <br>
     <li>
       <h3>Koordinat image map</h3>
-
-
+      <img src="assets/petabenua.png" alt="PetaBenua" usemap="#peta-benua">
+      <map name="peta-benua">
+        <area target="_self" alt="Amerika Serikat" title="Amerika Serikat" href="" coords="38,209,176,136,345,133,324,199,300,267,238,295,218,315,262,353,207,367,192,388,110,345,49,281,26,243" shape="poly" onclick="showInfo('Amerika Serikat')">>
+        <area target="_self" alt="Greenland" title="Greenland" href="" coords="349,139,434,146,434,198,329,219" shape="poly" onclick="showInfo('Greenland')">>
+        <area target="_self" alt="Amerika Selatan" title="Amerika Selatan" href="" coords="229,372,296,382,347,421,341,489,301,617,219,588,191,432" shape="poly" onclick="showInfo('Amerika Selatan')">>
+        <area target="_self" alt="Afrika" title="Afrika" href="" coords="424,306,472,286,541,304,586,370,650,462,535,564,394,418,380,333" shape="poly" onclick="showInfo('Afrika')">>
+        <area target="_self" alt="Asia" title="Asia" href="" coords="616,157,904,190,882,454,637,437,535,285,610,256" shape="poly" onclick="showInfo('Asia')">>
+        <area target="_self" alt="Eropa" title="Eropa" href="" coords="483,161,611,141,611,246,546,279,429,298,405,239" shape="poly" onclick="showInfo('Eropa')">>
+        <area target="_self" alt="Australia" title="Australia" href="" coords="781,456,956,461,983,574,775,590,738,501" shape="poly" onclick="showInfo('Australia')">>
+    </map>
+    
     </li>
   </ol>
 </body>
+  <script>
+    function showInfo(benua) {
+    alert("Ini adalah benua " + benua);
+    }
+  </script>
 </html>
